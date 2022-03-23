@@ -73,8 +73,6 @@ int main()
     Time time2(init_2);
     cout << "Entered: " << time2 << endl;
 
-
-
     while(x)
     {
         cout << "Press 1 to exit" << endl;
@@ -116,7 +114,8 @@ int main()
             {
                 cout << "Provide a scalar" << endl;
                 cin >> b;
-                cout << time1 * b;
+                time1 * b;
+                cout << time1;
                 break;
             }
             case 5:
@@ -129,7 +128,8 @@ int main()
                 time1.convert(y);
                 time2.convert(y);
                 y = !y;
-                cout << "Duration time after change: " << time1 << endl <<  "Second operand after change: " << time2 <<endl;
+                cout << "Duration time after change: " << time1 << endl;
+                cout << "Second operand after change: " << time2 << endl;
                 break;
             }
             default:{}
